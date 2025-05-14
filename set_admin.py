@@ -9,7 +9,7 @@ db_path = 'tryontrend.db'
 full_db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), db_path)
 
 # Admin credentials
-admin_email = "Shahkaushal26@gmail.com"
+admin_email = "Placeholder26@gmail.com"
 admin_password = "admintryontrend@123"
 admin_username = "admin"
 password_hash = generate_password_hash(admin_password)
