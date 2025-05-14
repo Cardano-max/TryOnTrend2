@@ -265,12 +265,12 @@ def ensure_database():
         db.create_all()
         
         # Ensure admin user exists
-        admin = User.query.filter_by(email='Shahkaushal26@gmail.com').first()
+        admin = User.query.filter_by(email='Placeholder26@gmail.com').first()
         if not admin:
             logger.info("Creating admin user during initialization")
             admin = User(
                 username='admin',
-                email='Shahkaushal26@gmail.com',
+                email='Placeholder26@gmail.com',
                 is_admin=True,
                 is_active=True,
                 auth_provider='local'
@@ -618,11 +618,11 @@ def init_db():
     logger.info("Starting database initialization")
     try:
         # Create admin user if not exists
-        admin = User.query.filter_by(email='Shahkaushal26@gmail.com').first()
+        admin = User.query.filter_by(email='Placeholder26@gmail.com').first()
         if not admin:
             admin = User(
                 username='admin',
-                email='Shahkaushal26@gmail.com',
+                email='Placeholder26@gmail.com',
                 is_admin=True,
                 is_active=True,
                 auth_provider='local'
@@ -633,12 +633,12 @@ def init_db():
 
         # Add new products for the Featured Collection
         products = [
-            {"name": "Kanchipuram Silk Saree", "description": "Elegant traditional silk saree perfect for weddings and celebrations.", "price": 129.99, "image_path": "images/products/kanchipuram_silk_saree.jpg", "category": "Sarees", "brand": "Ameezara Creation"},
-            {"name": "Banarasi Silk Saree", "description": "Exquisite Banarasi silk saree known for its intricate weaving.", "price": 149.99, "image_path": "images/products/Banarasi Silk Saree.jpg", "category": "Sarees", "brand": "Ameezara Creation"},
-            {"name": "Bridal Lehenga Choli", "description": "Bridal lehenga choli set perfect for weddings.", "price": 199.99, "image_path": "images/products/Bridal Lehenga Choli.jpg", "category": "Lehengas", "brand": "Ameezara Creation"},
-            {"name": "Designer Anarkali Suit", "description": "Designer Anarkali suit with intricate embroidery and a luxurious look.", "price": 159.99, "image_path": "images/products/Designer Anarkali Suit.jpg", "category": "Suits", "brand": "Ameezara Creation"},
-            {"name": "Designer Palazzo Kurti Set", "description": "Stylish palazzo and kurti set designed for modern women.", "price": 89.99, "image_path": "images/products/Designer Palazzo Kurti Set.jpg", "category": "Kurti Sets", "brand": "Ameezara Creation"},
-            {"name": "Embellished Sharara Set", "description": "Beautifully embellished Sharara set with detailed work.", "price": 179.99, "image_path": "images/products/Embellished Sharara Set .jpg", "category": "Sharara Sets", "brand": "Ameezara Creation"}
+            {"name": "Kanchipuram Silk Saree", "description": "Elegant traditional silk saree perfect for weddings and celebrations.", "price": 129.99, "image_path": "images/products/kanchipuram_silk_saree.jpg", "category": "Sarees", "brand": "Placeholder Creation"},
+            {"name": "Banarasi Silk Saree", "description": "Exquisite Banarasi silk saree known for its intricate weaving.", "price": 149.99, "image_path": "images/products/Banarasi Silk Saree.jpg", "category": "Sarees", "brand": "Placeholder Creation"},
+            {"name": "Bridal Lehenga Choli", "description": "Bridal lehenga choli set perfect for weddings.", "price": 199.99, "image_path": "images/products/Bridal Lehenga Choli.jpg", "category": "Lehengas", "brand": "Placeholder Creation"},
+            {"name": "Designer Anarkali Suit", "description": "Designer Anarkali suit with intricate embroidery and a luxurious look.", "price": 159.99, "image_path": "images/products/Designer Anarkali Suit.jpg", "category": "Suits", "brand": "Placeholder Creation"},
+            {"name": "Designer Palazzo Kurti Set", "description": "Stylish palazzo and kurti set designed for modern women.", "price": 89.99, "image_path": "images/products/Designer Palazzo Kurti Set.jpg", "category": "Kurti Sets", "brand": "Placeholder Creation"},
+            {"name": "Embellished Sharara Set", "description": "Beautifully embellished Sharara set with detailed work.", "price": 179.99, "image_path": "images/products/Embellished Sharara Set .jpg", "category": "Sharara Sets", "brand": "Placeholder Creation"}
         ]
 
         for product_data in products:
@@ -1990,7 +1990,7 @@ def set_admin_credentials():
     """Set specific admin credentials"""
     try:
         # Check if admin with this email exists
-        admin_email = "Shahkaushal26@gmail.com"
+        admin_email = "Placeholder26@gmail.com"
         admin_password = "admintryontrend@123"
         
         admin = User.query.filter_by(email=admin_email).first()
